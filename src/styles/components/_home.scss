@@ -1,0 +1,160 @@
+.tokyo_tm_all_wrap .rightpart {
+  width: 100%;
+  min-height: 100vh;
+  float: left;
+  position: relative;
+  background-color: #f8f8f8;
+  padding-left: 450px;
+}
+
+.tokyo_tm_all_wrap .rightpart_in {
+  position: relative;
+  width: 100%;
+  float: left;
+  clear: both;
+  border-left: 1px solid #ebebeb;
+  min-height: 100vh;
+}
+
+.tokyo_tm_section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-left: 450px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 99;
+}
+
+@media screen and (max-width: 1199px) {
+  .tokyo_tm_section {
+    z-index: 1;
+  }
+}
+
+.tokyo_tm_section .react-tabs__tab-panel {
+  transform: translate3d(10%, 0, 0);
+  transition: transform 0.5s ease;
+}
+
+.tokyo_tm_section .react-tabs__tab-panel--selected {
+  transform: translateZ(0);
+}
+
+.tokyo_tm_home {
+  width: 100%;
+  min-height: 100vh;
+  clear: both;
+  justify-content: center;
+  position: relative;
+}
+
+.tokyo_tm_home,
+.tokyo_tm_home .home_content {
+  display: flex;
+  align-items: center;
+}
+
+.tokyo_tm_home .avatar {
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+  border-radius: 100%;
+}
+
+.tokyo_tm_home .avatar .image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../../assets/avatar.jpeg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  -webkit-animation: morph 8s ease-in-out 1s infinite;
+  animation: morph 8s ease-in-out 1s infinite;
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 9px hsla(0, 0%, 100%, 0.3);
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  overflow: hidden;
+}
+
+@-webkit-keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  to {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  to {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.tokyo_tm_home .details {
+  margin-left: 80px;
+}
+
+.tokyo_tm_home .details .name {
+  font-size: 55px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.tokyo_tm_home .details .job {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 500;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+.tokyo_tm_home .social {
+  width: 100%;
+  float: left;
+}
+
+.social {
+  margin: 0;
+  list-style-type: none;
+}
+
+.social li {
+  margin: 0 15px 0 0;
+  display: inline-block;
+}
+
+.social li:last-child {
+  margin-right: 0;
+}
+
+.social li a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.social li a:hover {
+  filter: opacity(0.7);
+}
+
+.social li .svg {
+  width: 17px;
+  height: 17px;
+}

@@ -1,0 +1,84 @@
+.tokyo_tm_all_wrap .leftpart {
+  width: 450px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  padding: 0 100px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .tokyo_tm_all_wrap .leftpart {
+    box-shadow: 0 0 30px rgba(62, 68, 125, 0.08);
+  }
+}
+
+.tokyo_tm_all_wrap .leftpart_inner {
+  width: 100%;
+  height: auto;
+}
+
+.tokyo_tm_all_wrap .leftpart img {
+  max-width: 150px;
+}
+
+.tokyo_tm_all_wrap .leftpart .menu {
+  padding: 40px 0 50px 0;
+  width: 100%;
+  float: left;
+  margin: 0;
+  list-style-type: none;
+}
+
+.tokyo_tm_all_wrap .leftpart .menu a {
+  margin: 0;
+  width: 100%;
+  float: left;
+  text-decoration: none;
+  color: #767676;
+  display: inline-block;
+  font-weight: 500;
+  font-family: Montserrat;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tokyo_tm_all_wrap .leftpart .menu a .svg {
+  display: none;
+}
+
+.tokyo_tm_all_wrap .leftpart .menu a.active,
+.tokyo_tm_all_wrap .leftpart .menu a:hover {
+  color: #000;
+  letter-spacing: 2px;
+}
+
+.tokyo_tm_all_wrap .leftpart .copyright {
+  width: 100%;
+  float: left;
+}
+
+.tokyo_tm_all_wrap .leftpart .copyright p {
+  font-size: 15px;
+  color: #999;
+  font-family: Montserrat;
+  line-height: 25px;
+  font-style: italic;
+}
+
+.tokyo_tm_all_wrap .leftpart .copyright a {
+  text-decoration: none;
+  color: #787878;
+  font-weight: 500;
+  padding-left: 5px;
+  transition: all 0.3s ease;
+}
+
+.tokyo_tm_all_wrap .leftpart .copyright a:hover {
+  color: #000;
+  letter-spacing: 2px;
+}

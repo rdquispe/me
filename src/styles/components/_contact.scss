@@ -1,0 +1,138 @@
+.tokyo_tm_contact {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 100px 0 100px 0;
+}
+
+.tokyo_tm_contact .map_wrap {
+  width: 100%;
+  height: 400px;
+  clear: both;
+  float: left;
+  margin-bottom: 50px;
+  background: #dedede;
+}
+
+.tokyo_tm_contact .map_wrap iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.tokyo_tm_contact .fields {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+
+.tokyo_tm_contact .fields .first {
+  width: 100%;
+  float: left;
+}
+
+.tokyo_tm_contact .fields ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.tokyo_tm_contact .fields ul li {
+  width: 100%;
+  margin: 0 0 30px 0;
+  float: left;
+}
+
+.tokyo_tm_contact .fields ul li input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  font-style: italic;
+}
+
+.tokyo_tm_contact .fields ul li input:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.tokyo_tm_contact .fields textarea {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 120px;
+  resize: none;
+  background-color: transparent;
+}
+
+.tokyo_tm_contact .fields textarea:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.tokyo_tm_contact .empty_notice {
+  margin-bottom: 7px;
+  display: none;
+}
+
+.tokyo_tm_contact .empty_notice,
+.tokyo_tm_contact ul li span {
+  color: #f52225;
+  text-align: left;
+  font-weight: 500;
+}
+
+.tokyo_tm_contact .returnmessage {
+  color: #3a00ff;
+  margin-bottom: 7px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.tokyo_tm_all_wrap[data-magic-cursor="hide"] .mouse-cursor {
+  display: none;
+}
+
+.mouse-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translateZ(0);
+  visibility: hidden;
+}
+
+.cursor-inner {
+  margin-left: -3px;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  z-index: 50;
+  background-color: #000;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cursor-inner.cursor-hover {
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.cursor-outer {
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  z-index: 50;
+  opacity: 0.5;
+  transition: all 0.08s ease-out;
+}
+
+.cursor-outer.cursor-hover {
+  opacity: 0;
+}
